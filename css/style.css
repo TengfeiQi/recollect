@@ -1,0 +1,154 @@
+/**
+* @Author Tengfei.Qi
+* @Date 2013-05-16
+*/
+/*base style*/
+body,div,ul,ol,dl,li,p,header,nav,footer,aside,hgroup,h1,h2,h3,h4,blockquote{ margin: 0; padding: 0;}
+::selection {
+	background: #dd1144;
+	color: white;
+	text-shadow: none;
+	opacity: 0.9;
+}
+body { 
+	/*background: #f5f5f5 url(../img/bg.png) repeat 0 0 fixed;*/
+	background: #f5f5f5 url(http://ticket.ustack.com/assets/default/images/bedge_grunge.png) repeat 0 0 fixed;
+	padding-top: 44px;
+	font-family: "微软雅黑";
+}
+article {
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.pull-right {
+	float: right;
+	margin-left: 10px;
+}
+a {	
+	text-decoration: none;
+}
+a:hover {
+	-webkit-transition: color .218s;
+	transition: color .218s;
+	color: #fff; /* #427fed 蓝色*/
+	cursor: pointer;
+}
+span { font-size: 12px;}
+
+/*header style*/
+hgroup { 
+	text-indent: -9999px;
+	position: absolute;
+	top: -100px;
+}
+.logo {
+	background: url(../img/logo3.png) no-repeat 0 0;
+	display: inline-block;
+	height: 40px;
+	width: 121px;
+	text-indent: -999px;
+}
+.logo:hover {
+	background: url(../img/logo3.png) no-repeat 0 -40px;
+}
+nav a {
+	color: #999999;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	font-weight: bold;
+	font-size: 14px;
+}
+nav {
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	-webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+	box-sizing: border-box;
+	height: 44px;
+	width: 100%;
+	opacity: 0.9;
+	z-index: 1000;
+}
+img.lazy {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+	nav ul {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	article, footer {
+		width: 80%;
+		margin: 0 auto;
+		background: white;
+		/*border: 1px solid #e4e4e4;*/
+		border-top: none;
+		margin-top: 10px;
+	}
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 42px;
+}
+nav ul li:hover {
+	-webkit-transition: border-color .418s;
+	transition: border-color .418s;
+	border-bottom: 2px solid #fff;  /*#427fed Google 蓝*/
+	border-color: #fff;
+	text-decoration: none;
+}
+
+footer {
+	background: transparent;
+	text-align: center;
+	border: none;
+	padding: 20px;
+	color: #999;
+	font-size: 12px;
+}
+.line {
+	border-bottom: 1px solid #f5f5f5;
+}
+article header, article p,article h4,article blockquote{
+	padding: 15px;
+	word-wrap: break-word;
+	word-break: break-all;
+	display: block;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font: 16px/26px '微软雅黑';
+	color: #333;
+}
+article blockquote {
+	font-style: italic;
+}
+article header h3 {
+	font: 20px/30px '微软雅黑','黑体';
+}
+article header h3:hover {
+	-webkit-transition: color .218s;
+	transition: color .218s;
+	color: #dd1144;
+	cursor: pointer;
+}
+article p {
+	padding-top: 0px;
+}
+article a {
+	color: #dd1144;
+	font-weight: normal; 
+}
+article a:hover {
+	color: #dd1144;
+}
+article h4 {
+	font-weight: bold;
+}
+
